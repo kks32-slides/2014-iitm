@@ -4,8 +4,8 @@ var SLIDE_CONFIG = {
     title: 'Multi-Scale Multiphase Modelling of Granular Flows',
 	//	subtitle: 'Material Point Method and Discrete Element - Lattice Boltzmann Coupling',
     //eventInfo: {
-    //  title: 'Google I/O',
-    //  date: '6/x/2013'
+    // title: 'Google I/O',
+    // date: '6/x/2013'
     //},
     useBuilds: true, // Default: true. False will turn off slide animation builds.
     usePrettify: true, // Default: true
@@ -20,7 +20,7 @@ var SLIDE_CONFIG = {
     //theme: ['mytheme'], // Add your own custom themes or styles in /theme/css. Leave off the .css extension.
     
     //Workshop 
-    workshop: 'October 2013, Cambridge',
+    workshop: '21 November 2013, Cambridge',
   },
 
   // Author information

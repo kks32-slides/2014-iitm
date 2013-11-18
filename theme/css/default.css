@@ -119,7 +119,7 @@ div.block{
 	display: block;
 	margin-left:auto;
 	margin-right:auto;
- 	background-color:#E6E6E7;
+ 	background-color:#F2F2F2;/*E6E6E7;*/
 	border-radius: 0.5em;
 	text-align: center;
 }
@@ -315,6 +315,7 @@ slide.fill img {
 
 /* line 58, ../scss/default.scss */
 body {
+  /*background: black;*/ 
   background: url(../../images/theme/background.png);
 }
 
@@ -323,7 +324,7 @@ slides > slide {
   display: none;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 26px;
-  color: #616161;
+  color: #1A1A1A; /*616161;*/
   width: 900px;
   height: 700px;
   margin-left: -450px;
@@ -540,6 +541,7 @@ a:hover {
 /* line 276, ../scss/default.scss */
 h1, h2, h3 {
   font-weight: 600;
+  color: #0A0A0A;
 }
 
 /* line 280, ../scss/default.scss */
@@ -547,7 +549,7 @@ h2 {
   font-size: 45px;
   line-height: 45px;
   letter-spacing: -2px;
-  color: #515151;
+  color: #212121; /*515151*/
 }
 
 /* line 287, ../scss/default.scss */
@@ -556,7 +558,7 @@ h3 {
   letter-spacing: -1px;
   line-height: 2;
   font-weight: inherit;
-  color: #797979;
+  color: #414141;
 }
 
 /* line 295, ../scss/default.scss */
@@ -909,6 +911,10 @@ article.smaller q {
 /* line 554, ../scss/default.scss */
 article.smaller q:before, article.smaller q:after {
   font-size: 60px;
+}
+
+article.smaller-mag{
+
 }
 
 /* Builds */
@@ -1411,18 +1417,18 @@ aside.gdbar img {
   font-size: 65px;
   line-height: 1.4;
   letter-spacing: -3px;
-  color: #515151;
+  color: black;
 }
 /* line 898, ../scss/default.scss */
 .title-slide hgroup h2 {
   font-size: 34px;
-  color: darkgrey;
+  color: #212121;
   font-weight: inherit;
 }
 /* line 904, ../scss/default.scss */
 .title-slide hgroup p {
   font-size: 20px;
-  color: #797979;
+  color: #515151;
   line-height: 1.3;
   margin-top: 2em;
 }
