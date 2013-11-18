@@ -107,17 +107,17 @@ URL: https://code.google.com/p/io-2012-slides
 		<li> Generation of tsunamis </li>
 	</ul>
 	</aside>
-	<article class="smaller" style="cursor: url('images/mglass.gif'), auto;">
+	<article class="smaller">
 	<div class="figure">
 	  <img src="images/landslide.png" 
 	  onmouseover="this.src='images/LBM_Landslide.png'"
-	  onmouseout="this.src='images/landslide.png'" width="60%" style="cursor: url('images/mglass.gif'), auto;" ></a>
-<!--	<img src="images/landslide.png" width="60%" > -->
+	  onmouseout="this.src='images/landslide.png'" width="60%"></a>
 	</div>
   	<div style="float: left">
-  	<p> "Granular materials are ubiquitous in nature and are the second-most manipulated material in industry (the first one is water)" </p>
+  	<p> "Granular materials are ubiquitous in nature and are the second-most manipulated material in industry (the first one is water)" </p>
 	<p align="right"> - Patrick Richard (2005) in Nature</p>
 	</div>
+
     </article>
 </slide>
 	
@@ -181,11 +181,10 @@ URL: https://code.google.com/p/io-2012-slides
 	  </ul>
 	</div>
 	<div class="right" style="width:50%;">
-	  <figure>
-	  <img src="images/MD.png" width="50%">
-	  <figcaption style="text-align:center;">Particle Interaction
-	  Soft Contact</figcaption> 
-	  </figure>
+	  <video  width="90%" controls loop>
+	    <source src="videos/Tennis_Balls.webm" type="video/webm">
+  	      Your browser does not support the video tag.
+	  </video>
 	</div>
 	</article>
 </slide>
@@ -199,6 +198,23 @@ URL: https://code.google.com/p/io-2012-slides
 	<img src="images/NumericalMethods.png" width="100%">
 </slide>
 
+
+<!-- ************************* Slide ************************************-->
+<slide>
+	<hgroup>
+		<h2>Material Point Method</h2>
+	</hgroup>
+	<article class="smaller">
+	  <div class="figure" >
+	    <figure>
+	      <img src="images/MPM_Soil.png" width="100%">
+	      <figcaption style = "font-size: 80%; text-align: center; ">
+		Porosity in MPM </figcaption>
+	    </figure>
+	  </div>
+	</article>
+</slide>
+
 <!-- ************************* Slide ************************************-->
 <slide>
 	<hgroup>
@@ -209,40 +225,15 @@ URL: https://code.google.com/p/io-2012-slides
 	  <figure>
 	  <img src="images/FlowChart.png" style="width:80%">
 	  </figure>
-	</div>	<div class="right" style="width:47%;">
+	</div>	
+	<div class="right" style="width:50%;">
 	  <figure>
-	  <img src="images/MPM.png" width="80%">
+	  <img src="images/MPM.png" width="100%">
 	  </figure>
 	</div>
 	</article>
 </slide>
 
-
-<!-- ************************* Slide ************************************-->
-<slide>
-	<hgroup>
-	<h2>Material Point Method</h2>
-	<h3> Application to Soil Mechanics </h3>
-	</hgroup>
-	<article class="smaller">
-	<ul>
-	  <li>In large deformation, the volume of solid material
-	  points are updated - determinant (J) of the deformation gradient</li>
-	  <li>Jaumann rate of stress is used to consider the material rotation</li>
-	  <li>Static and Kinetic friction Co-efficient – tangential and normal friction are
-	  applied on nodes </li>
-	  <li>Traction can be applied through a boundary layer
-	  (selection of MPM particles)</li>
-	</ul>
-      <div class="figure" >
-	<figure>
-	<img src="images/MPM_Soil.png" width="60%">
-	<figcaption style = "font-size: 80%; text-align: center; ">
-	Porosity in MPM </figcaption>
-	</figure>
-      </div>
-      </article>
- </slide>
 
 <!-- ************************* Slide ************************************-->
 <slide>
@@ -268,7 +259,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h3> Granular slumping on a horizontal surface (Lajeunesse, 2005) </h3>
       </hgroup>
 	<article class="smaller">
-	<div class="left" style="width:47%;">
+	<div class="left" style="width:45%;">
 	  <ul>
 	    <li> Normal stiffness K<sub>n</sub>: </li>
 	    <div class="block"  style="clear: both; width: 45%">
@@ -283,22 +274,20 @@ URL: https://code.google.com/p/io-2012-slides
 	      $ C_{\textit{n}}=2\gamma\sqrt{m_{\textit{ij}}k_{\textit{n}}}$ <br />  
 	      $ \gamma = -\frac{\ln(\varepsilon)}{\sqrt{\pi^{2}+\ln^2(\varepsilon)}}$
 	    </div>
-	    
+	    <br />
 	    Coefficient of restitution $\varepsilon$
-	    <br/>
+	    <br/> <br />
 	    <div class="block"  style="clear: both; width: 55%">
 	      $ \mathit{m}_{\mathit{ij}}=\frac{\mathit{m}_{\mathit{i}}\mathit{m}_{\mathit{j}}}{\mathit{m}_{\mathit{i}}
 	      + \mathit{m}_{\mathit{j}}} $
 	    <div>
 	  </ul>
 	</div>
-	<div class="right" style="width:47%;">
-	  <figure>
-	  <img src="images/a4b4r18.png" width="60%">
-	  <figcaption style = "font-size: 80%; text-align: center;">
-	  Well graded (Polydispersity of 2)
-	  </figcaption>
-	  </figure>
+	<div class="right" style="width:55%;">
+	  <video  width="100%" controls loop>
+	    <source src="videos/Bouncing_Balls.webm" type="video/webm">
+  	      Your browser does not support the video tag.
+	  </video>
 	</div>
 	</article>
 </slide>
@@ -329,9 +318,12 @@ URL: https://code.google.com/p/io-2012-slides
 	</div>
 	<div class="right" style="width:45%;">
 	  <figure>
-	  <img src="images/psd.png" width="100%">
+	  <img src="images/psd.png"
+	  onmouseover="this.src='images/a4b4r18.png'" width = "100%"
+	  onmouseout="this.src='images/psd.png'" width = "60%">
 	  <figcaption style = "font-size: 80%; text-align: center;">
 	  Particle Size Distribution
+
 	  </figcaption>
 	  </figure>
 	</div>
@@ -662,33 +654,8 @@ URL: https://code.google.com/p/io-2012-slides
 	  </div>
 	  </article>
 </slide>
-
-	  	  
-<!-- ************************* Slide ************************************-->
-<slide>
-	  <hgroup>
-	  <h2>Granular Slope subjected to Impact</h2>
-	  </hgroup>
-	  <article class="smaller">
-	  <div class="left" style="width:48%;">
-	    <figure>
-	    <img src = "images/Gradient_Slope_Profile_200J.png" width="90%">
-	    <figcaption  style = "font-size: 80%; text-align: center;">
-	    Runout profile for 200J Gradient Input Energy
-	    </figcaption>
-	    </figure>
-	  </div>
-	  <div class="right" style="width:48%;">
-	    <figure>
-	    <img src = "images/Uniform_Slope_Profile_200J.png" width="71%">
-	    <figcaption  style = "font-size: 80%; text-align: center;">
-	    Runout profile for 200J Uniform Input Energy
-	    </figcaption>
-	    </figure>
-	  </div>
-	  </article>
-</slide>
 	  
+  
 <!-- ************************* Slide ************************************-->
 <slide>
   <hgroup>
@@ -704,6 +671,7 @@ URL: https://code.google.com/p/io-2012-slides
     <br />aspect ratio 'a' of 6 <br />
   </div>
 </slide>
+
 
 <!-- ************************* Slide ************************************-->
 <slide>
@@ -810,18 +778,17 @@ URL: https://code.google.com/p/io-2012-slides
 			<strong>Fluid: A. J. C. Ladd (1994)</strong>
 			<ul>
 			<br />
-				<li> Non sliding fluid - solid (Bounce Back) Pressure and velocity conditions</li>
-				<li> Transfer of momentum </li>
-				<br />
-			</ul>	
-				<div class="block" style="width:70%;">
-					$F_{\textit{l}}=-\frac{q_2-q_1}{\Delta t} \& \mbox{   }
-					F_{\textit{f}}=\sum\limits_{l}{\textit{F}_{\textit{l}}} $
-					<br />
-					$M_{\textit{f}}=\sum\limits_{l}{x_f-x_p}\times{\textit{F}_{\textit{l}}}$
-				</div>
+			<li> Non sliding fluid - solid (Bounce Back) Pressure and velocity conditions</li>
+			<li> Transfer of momentum </li>
 			<br />
-			
+			</ul>	
+			<div class="block" style="width:70%;">
+			  $F_{\textit{l}}=-\frac{q_2-q_1}{\Delta t} \& \mbox{   }
+			  F_{\textit{f}}=\sum\limits_{l}{\textit{F}_{\textit{l}}} $
+			  <br />
+			  $M_{\textit{f}}=\sum\limits_{l}{x_f-x_p}\times{\textit{F}_{\textit{l}}}$
+			</div>
+			<br />
 		<div class="left" style="width:70%;">
 		<strong>Solid:</strong>
 		<ul>
