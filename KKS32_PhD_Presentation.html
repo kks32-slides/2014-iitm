@@ -222,35 +222,25 @@ URL: https://code.google.com/p/io-2012-slides
 <!-- ************************* Slide ************************************-->
 <slide>
       <hgroup>
-      <h2> Particle Generation </h2>
-      <h3> Cummulative $\beta$ distribution </h3>
+      <h2> Particle Generation: Cummulative $\beta$ distribution </h2>
       </hgroup>
 	<article class="smaller">
 	<div class="left" style="width:55%;">
 	  <div class="block"  style="clear: both; width: 100%">
 	    $\beta(x,a,b)=\frac{1}{B(a,b)} \int\limits_{0}^{x}t^{a-1}(1-t)^{b-1}dt$
 	  </div><br />
-	  <article class="smaller">
-	  where, a > 0 and b >0 are two parameters. <br />
-	  </article><br />
-	  <div class="block"  style="clear: both; width: 75%">
-	    $B(a,b) =\Gamma(a)\Gamma(b)/\Gamma(a+b)$
-	  </div><br />
-	  where, $\Gamma$ is the Gamma function. The model grading curve $h(d)$ is defined as <br />
-	  <br />
-	  <div class="block"  style="clear: both; width: 70%">
-	    $h(d,a,b)=\beta(d_r(d);a,b)$
-	    $r=\frac{d_{max} - d_{min}}{d_{max}+d_{min}}$
-	  </div>
+	  <figure>
+	  <img src="images/psd.png" width = "90%">
+	  <figcaption style = "font-size: 60%; text-align: center;">
+	    Particle Size Distribution
+	  </figcaption>
+	  </figure>
 	</div>
 	<div class="right" style="width:45%;">
 	  <figure>
-	  <img src="images/psd.png"
-	  onmouseover="this.src='images/a4b4r18.png'" width = "100%"
-	  onmouseout="this.src='images/psd.png'" width = "60%">
-	  <figcaption style = "font-size: 80%; text-align: center;">
-	  Particle Size Distribution
-
+	  <img src="images/a4b4r18.png" width = "65%">
+	  <figcaption style = "font-size: 60%; text-align: center;">
+	    <br /> <br />Well graded (a = 4; b = 4; r= 2)
 	  </figcaption>
 	  </figure>
 	</div>
@@ -982,7 +972,7 @@ URL: https://code.google.com/p/io-2012-slides
 	Dense Packing:
 	<div class="figure">
 		<figure>
-			<img src = "images/Runout_a08.png" width=65%">
+			<img src = "images/Runout_a08.png" width=70%">
 		<figcaption style="text-size: 60%"> Evolution of Runout for 'a'=0.8</figcaption>
 		</figure>
 	</div>
