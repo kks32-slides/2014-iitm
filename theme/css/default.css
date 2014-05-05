@@ -332,6 +332,7 @@ body {
   background: url(../../images/theme/background.png);
 }
 
+
 /* line 62, ../scss/default.scss */
 slides > slide {
   display: none;
@@ -472,6 +473,7 @@ slides.layout-widescreen > slide,
 slides.layout-faux-widescreen > slide {
   margin-left: -550px;
   width: 1100px;
+
 }
 /* line 217, ../scss/default.scss */
 slides.layout-widescreen > slide.far-past,
