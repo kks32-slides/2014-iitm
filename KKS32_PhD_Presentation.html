@@ -16,7 +16,7 @@ URL: https://code.google.com/p/io-2012-slides
     MathJax.Hub.config.styles["#MathJax_Message"].bottom="";
     MathJax.Hub.config.styles["#MathJax_Message"].left="";
   </script>
-
+<!--
   <remotescript type="text/javascript"
                 src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
                 onLoad='document.getElementById("mathjax_ver").innerHTML=MathJax.fileversion;'>
@@ -25,7 +25,7 @@ URL: https://code.google.com/p/io-2012-slides
                src="MathJax22/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
                onLoad='document.getElementById("mathjax_ver").innerHTML=MathJax.fileversion;'>
   </localscript>
-
+-->
 <!--
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
@@ -37,10 +37,10 @@ URL: https://code.google.com/p/io-2012-slides
 </script>
 -->
 <!--offline access-->
-<!--
+
 <script type="text/javascript" src="./MathJax22/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
--->
+
 <!-- Script for Video play back on Slide for multiple videos-->
 <script
   src = "js/video.js">
@@ -576,7 +576,134 @@ URL: https://code.google.com/p/io-2012-slides
 	  </article>
 </slide>
 	  
-  
+   
+<!-- ************************* Slide ************************************-->
+<slide>
+	  <hgroup>
+	  <h2>Effect of # Material Points per Cell</h2>
+	  </hgroup>
+	  <article class="smaller"> 
+	  <div class="left" style="width:49%;">
+	    <figure>
+	    <img src = "images/Runout_500.png" width="100%">
+	    <figcaption  style = "font-size: 70%; text-align: center;">
+	    Runout Evolution for # of MPM Points per Cell
+	    </figcaption>
+	    </figure>
+	  </div>
+	  <div class="right" style="width:49%;">
+	    <figure>
+	    <img src = "images/KE_500.png" width="100%">
+	    <figcaption  style = "font-size: 70%; text-align: center;">
+	    Energy Evolution for # of MPM Points per Cell
+	    </figcaption>
+	    </figure>
+	  </div>
+	  </article>
+</slide>
+	  
+<!-- ************************* Slide ************************************-->
+<slide>
+	  <hgroup>
+	  <h2>Effect of # Material Points per Cell</h2>
+	  <h3>500J Input Gradient Energy</h3>
+	  </hgroup>
+	  <article class="smaller">
+	  <div class="figure" style="width:100%;">
+	    <figure>
+	    <img src = "images/500.png" width="60%">
+	    </figure>
+	  </div>
+	  </article>
+</slide>
+	  	  
+<!-- ************************* Slide ************************************-->
+<slide>
+	<hgroup>
+		<h2>Micro to Macro</h2>
+	</hgroup>
+	<article class="smaller">
+	<div class="figure">
+	  <figure>
+  	    <img src="images/Homogenization.png" width="90%">
+	  </figure>
+	</div>
+	</article>
+</slide>
+
+<!-- ************************* Slide ************************************-->
+<slide>
+  <hgroup>
+    <h2>Mircor to Macro: Voronoi Tesselation</h2>
+  </hgroup>
+  <div class="video">
+    <br />
+    <video  width="90%" controls loop>
+      <source src="videos/Voronoi_Tesselation.webm" type="video/webm">
+  	Your browser does not support the video tag.
+    </video>
+  </div>
+</slide>
+
+<!-- ************************* Slide ************************************-->
+<slide>
+	<hgroup>
+		<h2>Voronoi Tesselation: Density</h2>
+	</hgroup>
+	<article class="smaller">
+	<div class="figure">
+	  <figure>
+  	    <img src="images/Tesselation.png" width="95%"><br />
+	    <figcaption  style = "font-size: 80%; text-align: center;">
+	      Voronoi tesselation of run-out
+	    </figcaption>
+	  </figure>
+	  <figure>
+  	    <img src="images/density.png" width="95%"><br />
+	    <figcaption  style = "font-size: 80%; text-align: center;">
+	      Local Packing Density (Black: dense, White: loose)
+	    </figcaption>
+	  </figure>
+	</div>
+	</article>
+</slide>
+
+<!-- ************************* Slide ************************************-->
+<slide>
+	<hgroup>
+		<h2>Effect of Density on Runout Distance</h2>
+	</hgroup>
+	<article class="smaller">
+	<div class="figure">
+	  <figure>
+  	    <img src="images/runout_density_dry.png" width="75%">
+	    <figcaption  style = "font-size: 80%; text-align: center;">
+	      Runout Evolution
+
+	  </figcaption>
+	  </figure>
+	</div>
+	</article>
+</slide>
+
+<!-- ************************* Slide ************************************-->
+<slide>
+	<hgroup>
+		<h2>Effect of Density on Runout Distance</h2>
+	</hgroup>
+	<article class="smaller">
+	<div class="figure">
+	  <figure>
+  	    <img src="images/Relative_density.png" width="75%">
+	    <figcaption  style = "font-size: 80%; text-align: center;">
+	      Density Evolution
+	    </figcaption>
+	  </figure>
+	</div>
+	</article>
+</slide>
+
+
 <!-- ************************* Slide ************************************-->
 <slide>
   <hgroup>
@@ -1106,24 +1233,20 @@ URL: https://code.google.com/p/io-2012-slides
 	</article>
 </slide>
 
-<!-- ************************* Slide ************************************-->
+<!--************************* Slide ************************************-->
 <slide>
 	<hgroup>
-		<h2>Future Work</h2>
+		<h2>Granular Flow Down Inclined Planes</h2>
 	</hgroup>
-	<article>
-	<div class="videoR">
-	  <br /> <br />
-	  <video  id="slope" width="100%" loop>
-	    <source src="videos/Slope_2p5_r09.webm" type="video/webm">
-	  Your browser does not support the video tag.
-	  </video>
-	</div>
-	<div class="media-buttons">
-      	<input type="button" id="play-button" onclick="PlayVideo('slope')";play-button.disable=false; value="Play"/>
+	<article class="smaller">
+	<div class="figure">
+		<figure>
+			<img src = "images/KE_slope.png" width="75%">
+		</figure>
 	</div>
 	</article>
 </slide>
+
 <!-- ************************* Slide ************************************-->
 <slide>
 	<hgroup>
